@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_flameParticleSystem: {fileID: 6455770984905590946}
   m_smokeParticleSystem: {fileID: 2332589220277418709}
+  m_forceMultiplier: 10
+  m_forceDamp: 1000
 --- !u!65 &4301601110433813403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68,6 +70,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6455770984432113733}
     m_Modifications:
+    - target: {fileID: 7728936271246213532, guid: cf675669387294b7c932850c41aa710f,
+        type: 3}
+      propertyPath: ForceModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7728936271858425972, guid: cf675669387294b7c932850c41aa710f,
         type: 3}
       propertyPath: m_Name
@@ -164,6 +171,16 @@ PrefabInstance:
       propertyPath: InitialModule.startLifetime.minScalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5806326566332513569, guid: 35ed8d7acc2d3432aaabb20cfe7548d2,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806326566332513569, guid: 35ed8d7acc2d3432aaabb20cfe7548d2,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8293556666827154004, guid: 35ed8d7acc2d3432aaabb20cfe7548d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -172,7 +189,7 @@ PrefabInstance:
     - target: {fileID: 8293556666827154004, guid: 35ed8d7acc2d3432aaabb20cfe7548d2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8293556666827154004, guid: 35ed8d7acc2d3432aaabb20cfe7548d2,
         type: 3}
