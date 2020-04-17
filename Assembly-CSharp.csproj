@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
     <Compile Include="Assets\Scripts\Controllers\CollectibleController.cs" />
     <Compile Include="Assets\Scripts\Controllers\CollectionController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\FireController.cs" />
     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
     <Compile Include="Assets\Scripts\Controllers\MovementController.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />

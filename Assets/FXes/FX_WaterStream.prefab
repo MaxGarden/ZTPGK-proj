@@ -3680,7 +3680,7 @@ ParticleSystem:
       serializedVersion: 2
       m_Bits: 4294967295
     maxCollisionShapes: 256
-    quality: 1
+    quality: 0
     voxelSize: 1
     collisionMessages: 0
     collidesWithDynamic: 1
@@ -3694,9 +3694,9 @@ ParticleSystem:
     collisionShape4: {fileID: 0}
     collisionShape5: {fileID: 0}
     inside: 1
-    outside: 0
-    enter: 0
-    exit: 0
+    outside: 2
+    enter: 2
+    exit: 2
     radiusScale: 1
   SubModule:
     serializedVersion: 2
@@ -4709,7 +4709,7 @@ GameObject:
   - component: {fileID: 6209907963396625252}
   - component: {fileID: 7061457926752778366}
   m_Layer: 0
-  m_Name: WaterParticles
+  m_Name: FX_WaterStream
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
