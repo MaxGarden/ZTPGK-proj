@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_flameParticleSystem: {fileID: 6455770984905590946}
   m_smokeParticleSystem: {fileID: 2332589220277418709}
-  m_forceMultiplier: 10
+  m_forceMultiplier: 15
   m_forceDamp: 1000
 --- !u!65 &4301601110433813403
 BoxCollider:

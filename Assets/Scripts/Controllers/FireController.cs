@@ -18,25 +18,14 @@ public sealed class FireController : MonoBehaviour
     
     private int m_triggersCount;
 
-    private SerializedObject flamePart;
-
     private void Awake()
     {
         m_flameParticleSystem.Play();
         m_smokeParticleSystem.Stop();
-        flamePart = new SerializedObject(m_flameParticleSystem);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-
-        flamePart.FindProperty("ShapeModule.angle").floatValue = 75.0f;
-        flamePart.ApplyModifiedProperties();
-        m_flameParticleSystem.Emit(200);
-
-        flamePart.FindProperty("EmissionModule.rateOverTime.scalar").floatValue = 10.0f;
-        flamePart.ApplyModifiedProperties();
-
         if (m_triggersCount++ <= 0)
         {
             m_smokeParticleSystem.Play();
@@ -49,12 +38,6 @@ public sealed class FireController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-
-         flamePart.FindProperty("ShapeModule.angle").floatValue = 0.0f;
-         flamePart.FindProperty("EmissionModule.rateOverTime.scalar").floatValue = 400.0f;
-         flamePart.ApplyModifiedProperties();
-
-
         if (--m_triggersCount <= 0)
             m_smokeParticleSystem.Stop();
     }
