@@ -14696,7 +14696,7 @@ PrefabInstance:
     - target: {fileID: 7728936271858425972, guid: cf675669387294b7c932850c41aa710f,
         type: 3}
       propertyPath: m_Name
-      value: FX_Fire
+      value: FX_Flame
       objectReference: {fileID: 0}
     - target: {fileID: 7728936271858425973, guid: cf675669387294b7c932850c41aa710f,
         type: 3}
